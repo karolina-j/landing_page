@@ -1,2 +1,4 @@
 # landing_page
-A web page designed in HTML and CSS
+
+A sample of a landing page designed in HTML and CSS for the Odin Project.
+

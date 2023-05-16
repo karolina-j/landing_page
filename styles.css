@@ -2,7 +2,9 @@
 
 
 body {
-    font: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    
     display: flex;
     flex-direction: column;
 }
@@ -19,19 +21,23 @@ a {
 }
 
 
+
+
+
 .header {
-    padding: 16px 70px;
+    padding: 16px 140px;
     background-color: #1f2937;
+    border: 1px solid #1f2937;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .img_placeholder {
     font-size: 24px;
     color: #f9faf8;
     font-weight: 700;
+    margin-right: auto;
 }
 
 .links {
@@ -42,24 +48,44 @@ a {
 }
 
 
+
+
+
+
 .content {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 
 
-.hero {
+
+
+.fragment1 {
     background-color: #1f2937;
-    padding:  80px 70px;
+    padding:  80px 140px;
+    border: 1px solid #1f2937;
 
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+}
+
+
 
 .left {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
@@ -81,10 +107,10 @@ a {
 button {
     cursor: pointer;
     padding: 5px 24px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.signup {
+button.signup {
     font-size: 16px;
     font-weight: 600;
     background-color: #3882f6;
@@ -92,21 +118,58 @@ button {
     color: #e5e7eb;
 }
 
-
-
-
 .img2 {
-    width: 300px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.img2 img {
+    height: 16rem;
+    max-width: 100%;
+    border-radius: 8px;
+}
+/*
+.img2 {
+    width: 40%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    /*
     background-color: lightslategray;
     color: #e5e7eb;
-    padding: 80px 80px;
+
 
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
+.img2 img {
+    /*
+    width: 100%;
+    overflow: hidden;
+
+    
+}
+*/
+/*
+.img2 {
+    max
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.img2 img {
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%
+}
+*/
 
 
 
@@ -121,7 +184,7 @@ button {
     color: #1f2937;
     font-size: 36px;
     font-weight: 900;
-    padding: 42px;
+    padding: 50px;
 
     display: flex;
     justify-content: center;
@@ -141,6 +204,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 0;
 
     text-align: center;
     align-items: center;
@@ -150,13 +214,13 @@ button {
 .info_img {
     border: 4px solid #3882f6;
     border-radius: 16px;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
 }
 
 .text {
+    font-size: 18px;
     color: grey;
-
 }
 
 
@@ -164,18 +228,25 @@ button {
 
 .quote {
     background-color: #e5e7eb;
+    padding: 90px 210px;
+
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 100px  170px;
     align-items: center;
+    justify-content: center;
 }
 
+.full_quote {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .quote_text {
-    font-size: 36px;
+    font-size: 30px;
     color: #1f2937;
     font-style: italic;
+    margin-top: 10px;
 
 }
 
@@ -183,4 +254,74 @@ button {
     align-self: flex-end;
     font-size: 24px;
     font-weight: 700;
+    flex-grow: 0;
+}
+
+
+
+
+
+
+.action {
+    padding:  80px 140px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.action_box {
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 25px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+.action_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.action_title {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 700;
+}
+
+.action_text {
+    color: #e5e7eb;
+    font-size: 12px;
+
+}
+
+
+.signup.action {
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 5px 24px;
+
+    flex-shrink: 0;
+
+}
+
+
+
+
+
+.footer {
+    margin-top: auto;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

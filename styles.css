@@ -123,6 +123,10 @@ button {
     border-radius: 10px;
 }
 
+.signup:active {
+    background-color: #2659ac;
+}
+
 button.signup {
     height: 35px;
     font-size: 16px;
@@ -144,12 +148,6 @@ button.signup {
     border-radius: 8px;
 
 
-}
-
-.img2 img {
-    height: 16rem;
-    max-width: 100%;
-    border-radius: 8px;
 }
 
 
@@ -391,15 +389,7 @@ button.signup {
 
 
 @media only screen and (max-width: 980px) {
-    .info4 {
-        display: none;
-    }
-
-    .info {
-        width: 30%;
-    }
-
-
+    
     .links {
         display: none;
     }
@@ -417,6 +407,21 @@ button.signup {
     }
 
 
+    .fragment1 {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+
+    .info4 {
+        display: none;
+    }
+
+    .info {
+        width: 30%;
+    }
+
+
     .action_box {
         width: 100%;
     }
@@ -425,6 +430,57 @@ button.signup {
 
 
 @media only screen and (max-width: 750px) {
+    .header,
+    .fragment {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+
+    .fragment1 {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    
+    .left {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }   
+    
+
+    .title,
+    .hero_text {
+        text-align: center;
+    }
+
+    
+
+    .img2 {
+        flex: 1 1 0;
+        width: 100%;
+        overflow: hidden;
+        background-image: url("./hero_image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        border-radius: 8px;
+        min-height: 40vw;
+    
+    
+    }
+
+
+
     .info3,
     .info4 {
         display: none;
@@ -433,6 +489,12 @@ button.signup {
     .info {
         width: 50%;
     }
+
+    .full_quote {
+        width: 100%;
+    }
+
+    
 }
 
 
